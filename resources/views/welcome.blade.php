@@ -17,8 +17,9 @@
                 </div>
 
                 <div class="max-w-lg lg:mx-12 lg:order-2">
-                    <h1 class="text-3xl font-medium tracking-wide text-gray-800 dark:text-white lg:text-4xl">The best Apple
-                        Watch apps</h1>
+                    @foreach ($x as $item)
+                    <h1 class="text-3xl font-medium tracking-wide text-gray-800 dark:text-white lg:text-4xl">Welcome{{$item ->name}}</h1>
+                    @endforeach
                     <p class="mt-4 text-gray-600 dark:text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem
                         voluptatem eos accusantium cumque.</p>

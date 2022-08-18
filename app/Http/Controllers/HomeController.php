@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\users;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function home(){
-        return view("welcome");
+        $x = users::all();
+        return view("welcome", compact("x"));
     }
 }
